@@ -1,0 +1,125 @@
+.logos{
+    text-align: center;
+    display: block;
+}
+
+* {
+    margin: 0;
+    padding: 2px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 1vh;
+}
+
+main {
+    columns: 2;
+    padding: 2vw;
+    column-gap: 1.5vw;
+}
+
+main.resultados{
+    height:550px;
+    width:600px;
+}
+
+main img {
+    height:450px;
+    width:500px;
+}
+
+.main-title {
+    margin: 80px;
+}
+
+.main-title h1 {
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.authors {
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    text-align: justify;
+    font-weight: 1.5;
+}
+
+.left-column,
+.right-column {
+    width: 45%;
+}
+
+.left-column h3,
+.right-column h3 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.left-column p,
+.right-column p {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    padding: 2vh;
+}
+
+p.email {
+    color: rgb(63, 124, 216);
+}
+
+footer::after {
+    content: " ";
+    position: absolute;
+    background-color: #2C9303;
+    left: 0;
+    top: 110vw;
+    width: 94%;
+    height: 3.3vw;
+    clip-path: polygon(99.2% 100%, 1% 85%, 0 0);
+}
+
+footer::before {
+    content: " ";
+    position: absolute;
+    background-color: #1D6904;
+    left: 0;
+    top: 108vw;
+    width: 85%;
+    height: 4.6vw;
+    clip-path: polygon(99.4% 100%, 0.7% 37%, 0 0);
+}
+
+header::after {
+    content: " ";
+    position: absolute;
+    background-color: #2C9303;
+    right: 0;
+    top: 6vw;
+    width: 94%;
+    height: 3.3vw;
+    clip-path: polygon(0 0, 99% 15%, 99.2% 100%);
+}
+
+header::before {
+    content: " ";
+    position: absolute;
+    background-color: #1D6904;
+    right: 0;
+    top: 7vw;
+    width: 85%;
+    height: 4.6vw;
+    clip-path: polygon(0 0, 99.3% 63%, 99.4% 100%);
+}
+
+@media screen and (max-width: 600px) {
+    main {
+        columns: 1;
+    }
+}
